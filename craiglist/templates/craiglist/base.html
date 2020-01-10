@@ -8,7 +8,7 @@
   <title>Craiglist</title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="{% static "css/style.css" %}">
+  <link rel="stylesheet"  href="{% static 'craiglist/style.css' %}">
 
   <!-- materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -25,22 +25,31 @@
 <body>
 <nav>
     <div class="container nav-wrapper">
-        <a href="/" class="brand-logo">Codedaddies List</a>
+        <a href="/" class="brand-logo ">Craiglist</a>
         <ul id="nav-mobile" class="right">
             <li><a href="/">Home</a></li>
         </ul>
     </div>
 </nav>
 
-<div class="container">
+<style>
+div {
+  margin: 10px;
+}
+  </style>
+
+
+<div class="container" >
+  <br>
     <h1 style="text-align: center">What do you want to search?</h1>
+
     <div class="row">
         <div class="col s4">
             <!-- Promo Content 1 goes here -->
             <div class="center">
                 <i class="large material-icons" style="color: #EE6E73">flash_on</i>
                 <p>Fast craigslist web scraper</p>
-                <p class="light center">Scrape away right here with a beautiful GUI.</p>
+                <p class="light center">Scrape away right here</p>
             </div>
         </div>
 
@@ -57,7 +66,7 @@
             <!-- Promo Content 3 goes here -->
             <div class="center">
                 <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
-                <p>A much sexier front-end to Craigslist</p>
+                <p>A super cool front-end to Craigslist</p>
                 <p class="light center">We built this with ❤️</p>
             </div>
         </div>

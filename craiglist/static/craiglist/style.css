@@ -1,0 +1,18 @@
+
+.card {
+ height: 450px;
+ width: 250px;
+ overflow: hidden;
+}
+
+.card-image {
+ height: 350px;
+ width: 250px;
+ overflow: hidden;
+}
+
+.card-image img {
+ height: 250px;
+ width: 300px;
+ overflow: hidden
+}
