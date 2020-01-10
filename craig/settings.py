@@ -26,7 +26,7 @@ SECRET_KEY = 'xak=!xkt4)itng)9#9dy5j9ewhy)*_0p_dt0m8u15k6(7=y7@g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jcool12-craiglist.herokuapp.com']
 
 
 # Application definition
