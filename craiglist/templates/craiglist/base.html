@@ -76,11 +76,11 @@ div {
     <form action= "{% url 'new_search'  %}" method="post">
       {% csrf_token %}
       <input type="text" name="search" placeholder="Type here">
-
-      <a class="waves-effect waves-light btn-small">
-        <i class="material-icons right">send</i>Submit</a>
-
+      <button class="btn waves-effect waves-light teal"
+      type="submit" name="action">Submit
+        <i class="material-icons right">send</i></button>
     </form>
+
 
     {% block content %}
 
