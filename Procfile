@@ -1,1 +1,1 @@
-web: gunicorn craiglist.wsgi 
+web: gunicorn jcool12-craiglist.wsgi
