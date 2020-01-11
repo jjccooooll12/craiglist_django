@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import django_heroku
 
-
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,7 +26,7 @@ SECRET_KEY = 'xak=!xkt4)itng)9#9dy5j9ewhy)*_0p_dt0m8u15k6(7=y7@g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jcool12-craiglist.herokuapp.com']
+ALLOWED_HOSTS = ['mycraiglist.herokuapp.com']
 
 
 # Application definition
@@ -77,9 +75,14 @@ WSGI_APPLICATION = 'craig.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-
-
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+"""DATABASES = {
 'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     'NAME': 'db15l37s85mc1t',
@@ -87,7 +90,7 @@ DATABASES = {
     'PASSWORD': '1e85fd37e3e6fad755f17ffe249b72de79c025531f95e60c882553f8f35af932',
     'HOST': 'ec2-174-129-33-201.compute-1.amazonaws.com',
     'PORT': '5432',
-}}
+}}"""
 
 
 # Password validation
